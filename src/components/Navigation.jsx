@@ -1,21 +1,31 @@
+import { Link } from "react-router-dom";
+
 const Navigation = () => {
   return (
     <div className="flex justify-center text-black items-center h-screen">
       <ul className="text-2xl space-y-10 text-center">
+        <Link to="/home">
+          <li>
+            <a>Home</a>
+          </li>
+        </Link>
+        <Link to="/search">
+          <li>
+            <a>Search</a>
+          </li>
+        </Link>
+        <Link to="/schedule">
+          <li>
+            <a>My Schedule</a>
+          </li>
+        </Link>
+        <Link to="/login">
+          <li>
+            <a>Log in</a>
+          </li>
+        </Link>
         <li>
-          <a href="/home">Home</a>
-        </li>
-        <li>
-          <a href="/search">Search</a>
-        </li>
-        <li>
-          <a href="/schedule">My Schedule</a>
-        </li>
-        <li>
-          <a href="/login">Log in</a>
-        </li>
-        <li>
-          <a href="#">Log out</a>
+          <a>Log out</a>
         </li>
       </ul>
     </div>
