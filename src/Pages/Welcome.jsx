@@ -1,6 +1,7 @@
 import React from "react";
 import Top from "../assets/Welcometop.jpg";
 import Bottom from "../assets/Welcomebottom.jpg";
+import { Link } from "react-router-dom";
 
 const Welcome = () => {
   return (
@@ -19,12 +20,11 @@ const Welcome = () => {
       <div className="z-10 bottom-0 mt-auto ">
         <img src={Bottom} alt="Center" className="" />
         <div className="absolute bottom-0 w-full flex justify-center pb-8">
-          <a
-            href="/home"
-            className="bg-yellow-300 w-[176px] h-[50px] rounded-full flex justify-center items-center font-semibold tracking-wider text-sm shadow-lg"
-          >
-            START TRAINING
-          </a>
+          <Link to="/home">
+            <a className="bg-yellow-300 w-[176px] h-[50px] rounded-full flex justify-center items-center font-semibold tracking-wider text-sm shadow-lg">
+              START TRAINING
+            </a>
+          </Link>
         </div>
       </div>
     </section>
